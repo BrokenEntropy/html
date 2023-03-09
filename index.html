@@ -1,0 +1,98 @@
+<!-- html (hypertext markup language) é o bloco de construção mais básico da web, define o significado e a estrutura do conteúdo da web.
+
+    hypertext = referem-se a links que conectam páginas da web entre si. seja dentro de um único site ou entre sites. links são um aspecto
+    fundamental da web. ao carregar conteúdo na internet e vinculá-lo a páginas criadas por outras pessoas, você se torna um participante
+    ativo da world wide web. 
+
+    o html usa "markup" para anotar texto, imagem e outros conteúdos para exibição em um navegador web, a marcação html inclui elementos
+    especiais como head, title, body, header, footer, article, section, p, div, span, img, aside, audio, canvas, datalist, details, embed,
+    nav, output, progress, video, ul, ol, li e muitos outros.
+
+    um elemento html é separado de outro texto em documento por "tags", que consistem no nome do elemento entre <>, o nome do elemento é
+    case insensitive, ou seja tanto faz se é inscrito com letras maiúsculas ou minúsculas, por exemplo a tag title pode ser escrita das 
+    seguintes formas: <title>, <TITLE> ou <Title> 
+
+    algumas tags html tem corpo, geralmente tags que tem corpo vão encapsular algum conteúdo dentro delas ou outra tag.
+
+    tags com corpo tem a seguinte caracteristica:
+
+    <tag> = tag de abertura
+    
+    </tag> = tag de fechamento
+
+    tags que não tem corpo podem ter duas formas:
+
+    <tag>
+    <tag/>
+
+    tags tem atributos, esses atributos alguns tem um ou mais valores e alguns não:
+
+    <tag atributo0="valor1 valor2">
+    <tag atributo1="valor">
+    <tag atributo2>
+
+    num documento html começamos especificando o tipo do documento para o navegador. 
+    a maneira de especificar pro navegador que se trata de um documento html5 é a seguinte:
+
+    <!DOCTYPE html>
+
+    a tag raiz de um documento html é a tag html, a tag html é o recipiente para todos os outros elemento html com exceção da
+    tag doctype.
+
+    dentro da tag html sempre deve ser incluindo o atributo lang, para declarar o idioma da página web. isso ajuda os motores de busca
+    e navegadores
+
+    <html lang="pt-BR">
+
+    </html>
+
+    a tag <head> é um contêiner para metadados e fica localizada entre a tag <html> e <body> metadados são dados sobre o documento html, 
+    metadados não são exibidos para o usuárioos metadados geralmente definem o titulo do documento, conjunto de caracteres, estilos, 
+    scripts dentre outras coisas.
+
+    os seguintes elementos vão dentro da tag head:
+
+    * <title> (requerido em todo documento html)
+    * <style>
+    * <base>
+    * <link>
+    * <meta>
+    * <script>
+    * <noscript>
+
+    a tag <title> é obrigatória em todos os documentos html, ela serve pra definir o titulo do nosso documento html.
+
+    a tag <meta> define metadados sobre um documento html, metadados são dados (informações) sobre dados, a tag meta não tem corpo.
+
+    o atributo charset especifica a codificação de caracteres para o documento HTML. 
+
+    <head>
+        <title> </title> 
+    </head>
+
+    a tag <body> define o corpo do documento html, a tag <body> contém todo o conteúdo de um documento html, como cabeçalhos, parágrafos,
+    imagens, hyperlinks, tabelas, listas, etc...
+
+    só pode haver um elemento <body> em um documento html. 
+
+    a tag <p> define um paragráfo, por padrão os navegadores adicionam uma linha em branco antes e depois de uma tag <p>, tags <p> vão
+    dentro da tag <body>
+
+    <body>
+        <p>
+            olá mundo
+        </p>
+    </body> 
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title> Meu HTML </title>
+    </head>
+    <body>
+        <p>
+            olá mundo!
+        </p>
+    </body>
+</html>

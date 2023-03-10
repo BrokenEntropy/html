@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Meu HTML 3</title>
+        <!--
+            o elemento html <style> contém informações de estilo para um documento ou uma parte do documento.
+            as informações de estilos especificos estão contidos dentro deste elemento, geralmente no css
+        -->
+        <style>
+            /*
+                usando os identificadores nas tags html como id e class, podemos dar estilos para essas tags
+                também podemos estilizar um tipo especificos de tags usando o nome delas 
+            */
+            h1 {
+                background-color: red;
+            }
+
+            p {
+                background-color: blue;
+            }
+
+            /* 
+                para especificar um id usamos o #
+                para especificar uma class usamos o . 
+
+                o id tem um peso maior que a class, então mesmo que definamos todos os elementos com a class fundo-vermelho para
+                ter um background vermelho, o css mantido no elemento do id cabecalho-dois sera o roxo como background.
+            */
+            #cabecalho-dois {
+                background-color: purple;
+            }
+
+            .fundo-vermelho {
+                background-color: red;
+            }
+
+        </style>
+    </head>
+    <body>
+        <!-- 
+            o atributo html id é usado para especificar um id exclusivo para um elemento html
+            não podemos ter mais de um elemento com o mesmo id em um documento html
+            
+            o atributo class html é usado para especificar uma classe para um elemento html
+            vários elementos html podem ter a mesma classe
+
+            esses dois identificadores tanto a class quanto o id são importantes para quando
+            vamos usar css e javascript 
+
+            o atributo class e id podem ser adicionados em todas as tags html 
+        -->
+        <h1 id="cabecalho-um" class="fundo-vermelho borda-esquerda"> Meu HTML 1 </h1>
+        <h2 id="cabecalho-dois" class="fundo-vermelho"> Meu HTML 2 </h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia similique, earum quibusdam illum qui libero voluptas magni aperiam 
+            soluta accusamus a magnam, ipsa voluptate possimus alias voluptates consectetur assumenda rem.
+        </p>
+    </body>
+</html>

@@ -1,0 +1,162 @@
+<!--
+    toda tag html pode receber um atributo style que recebe um css dentro, o css digitado dentro do atributo style só é aplicado
+    especificamente naquela tag que contém o atributo style.  
+-->
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Meu HTML 5</title>
+        <style>
+            .img-in-text {
+                width: 200px;
+                height: 200px;
+            }
+        </style>
+    </head>
+    <body>
+        <!--
+            cada elemento html tem um valor display padrão, dependendo do tipo do elemento. 
+            existem dois valores de exibição: block e inline 
+
+            um elemento de nivel de block sempre começa em uma nova linha e os navegadores 
+            adicionam automaticamente algum espaço antes e depois do elemento.
+
+            um elemento de nivel de block sempre ocupa todo o width disponivel (estende-se
+            para a esquerda e para direita o máximo possivel)
+
+            dois elementos de nivel de block comumente usados são <div> e <p> 
+
+            a tag <p> define um paragrafo em um documento html.
+            a tag <div> define uma divisão ou seção em um documento html. 
+
+            exemplos de tag de nivel de block:
+            <address> <article>  <aside>      <blockquote>  <canvas>    <dd>    <h1>-<h6>   <pre>
+            <dt>      <fieldset> <figcaption> <figure>      <footer>    <form>  <p>
+            <hr>      <li>       <main>       <nav>         <noscript>  <ol>    <dl>
+            <section> <table>    <tfoot>      <ul>          <video>     <div>   <header>
+
+            um elemento inline não começa em uma nova linha.
+            um elemento inline ocupa apenas a largura necessária. 
+            
+            exemplo de elemento inline: <span>
+
+            exemplos de elementos inline:
+
+            <a>     <abbr>      <dfn>       <output>    <sup>       <br>        <kbd>
+            <cite>  <code>      <object>    <sub>       <big>       <input>     <select>
+            <label> <map>       <strong>    <bdo>       <img>       <script>    <tt>
+            <small> <span>      <b>         <i>         <samp>      <time>
+            <var>   <acronym>   <em>        <q>         <textarea>  <button>
+
+            um elemento de nivel inline não pode conter um elemento de nivel de block. 
+        -->
+        <h1 style="background-color: red;"> Meu HTML </h1>
+        <p>
+            <!--
+                tag b especifica texto em negrito sem nenhuma importância.
+
+                tag strong define um texto com forte importantancia, o conteúdo interno geralmente é exbido
+                em negrito. 
+
+                tag i define uma parte do texto em uma voz ou humor alternativo. o conteúdo interno geralmente
+                é exibido em italico. 
+
+                tag i é comumente utilizada para indicar um termo técnico, uma frase de outro idioma, um 
+                pensamento etc...
+
+                usar a tag i somente quando não houver um elemento semantico melhor.
+
+                tag em é usada para definir um texto enfatizado, o conteúdo interno geralmente é exibido
+                em italico
+
+                um leitor de tela pronunciara as palavras em <em> com ênfase, usando tonicidade verbal.
+
+                tag b não é recomendada e deve ser usada como último recurso quando nenhuma outra
+                tag for mais apropriada. texto enfatizado deve ser indicado com a tag <em>, o texto
+                importante com a tag <strong> e o texto marcado/destacado com a tag <mark>
+
+                tag del define o texto que foi excluido de um documento. os navegadores geralmente traçam
+                uma linha através do texto excluido
+
+                tag ins define um texto que foi inserido em um documento. os navegadores geralmente sublinham
+                o texto que foi inserido
+                
+                a tag s especifica um texto que não é mais preciso ou relevante. o texto será exibido com uma
+                linha através dele. 
+
+                a tag s não deve ser usada para um texto deletado em um documento, para isso utilizamos del
+
+                tag small define um texto menor (como direitos autorais e outros comentários laterais).
+
+                a tag sup define o texto sobrescrito. o texto sobrescrito aparece meio caractere acima da 
+                linha normal e, às vezes, é renderizado em uma fonte menor, o texto sobrescrito pode ser
+                usado para notas de rodapé como WWW[1].
+
+                a tag sub define o texto subscrito.  O texto subscrito aparece meio caractere abaixo da linha normal e,
+                as vezes, é renderizado em uma fonte menor. O texto subscrito pode ser usado para fórmulas químicas, 
+                como H2O.
+
+                tag q define uma citação curta, o navegador geral insere aspas ao redor da citação 
+            -->
+            <b> Lorem </b> <strong> ipsum </strong> <i> dolor </i> <em> sit </em> amet consectetur adipisicing 
+            elit. <del> Provident iste dolorum impedit atque quas explicabo sapiente voluptates beatae </del>
+            <q cite="https://github.com/BrokenEntropy"> Lorem ipsum </q>
+            <br>
+            <ins> quam odio </ins> ab <s> et veritatis </s> totam earum deleniti asperiores, soluta 
+            <small> vitae nostrum. </small> 2 <sup> 2 </sup> = 4 | h <sub> 2 </sub> O.
+            <!--
+                a tag html <a> define um hyperlink.
+                o atributo mais importante da tag <a> é o href, que indica o destino do link.
+                o texto que vai dentro da tag a é o texto visivel para o leitor.
+                clicar no texto do link enviará o leitor ao endereço de url especificado.
+
+                por padrão a página vinculada será exibida na janela atual do navegador, para
+                alterar isso, temos que especificar outro target pro link.
+
+                o atributo target especifica onde abrir o documento vinculado.
+
+                _blank: abre o documento em uma nova janela do browser.
+
+                podemos além de texto colocar dentro da nossa tag de link uma imagem.
+
+                o atributo alt de uma tag <img> serve para descrever a nossa imagem o que
+                ajuda em questões de acessibilidade
+            -->
+            <br>
+            <a href="https://github.com/BrokenEntropy" target="_blank">
+                <img class="img-in-text" src="https://avatars.githubusercontent.com/u/103264700?v=4" alt="minha foto de perfil no github">
+            </a>
+        </p>
+        <!--
+            a tag blockquote especifica uma seção citada de outra fonte, para referenciarmos de onde vem a citação podemos usar o 
+            atributo cite
+            a tag hr define uma quebra temática em uma página html (como por exemplo uma mudança de tópico)
+            o elemento hr geralmente é exibido como uma regua horizontal usada para separar conteúdo (ou definir uma
+            alteração em uma página html) 
+            A tag code é usada para definir um pedaço de código de computador. O conteúdo interno é exibido na fonte monoespaçada 
+            padrão do navegador.
+            HTML texto preformatado pre> é a tag utilizada para representar texto pré-formatado. Um texto dentro desse elemento é 
+            tipicamente exibido em uma fonte não proporcional da mesma maneira em que o texto original foi disposto no arquivo. 
+            Espaços em branco são mantidos no texto da mesma forma em que este foi digitado.
+            span é um conteiner assim como div, porém span é uma tag inline enquanto div é uma tag block 
+            ambos são tags genericas que não passam significado algum pro navegador
+        -->
+        <hr>
+        <blockquote cite="https://github.com/BrokenEntropy">
+            <span style="background-color:red;"> Lorem ipsum dolor </span> sit amet consectetur adipisicing elit. Quis animi accusamus rem eos tempore debitis blanditiis non 
+            porro expedita magnam, deleniti facilis, quas odit unde doloremque, ab ratione! Et, blanditiis!
+        </blockquote>
+        <pre>
+            <code>
+console.log("testando a tag code");
+            </code>
+        </pre>
+            
+        <div style="background-color: blue">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Est, et. Incidunt dolore unde distinctio! Consectetur, unde quisquam quidem,
+            accusantium possimus aliquam consequatur eveniet voluptatibus odio voluptatum magni minus eos quae.
+        </div>
+    </body>
+</html>
